@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    История изменений
+{% endblock %}
+
+{% block content %}
+    <img src="{{ image.image.url }}" alt="">
+    {% for item in image.history.all %}
+        <p>{{ item.date_time }} - путь сменился с {{ item.old_path }}</p>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Личный кабинет
+{% endblock %}
+
+{% block content %}
+    <h1>Личный кабинет</h1>
+
+    {% for image in request.user.images.all %}
+        <div>
+            <img src="{{ image.image.url }}" alt="">
+            <a href="{% url 'account:edit' image.id %}">Редактировать</a>
+            <a href="{% url 'account:info' image.id %}">История изменений</a>
+        </div>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,40 @@
+.content {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.content img {
+    width: 300px;
+    height: auto;
+}
+
+.content form {
+    padding: 15px 25px;
+    text-align: center;
+    border: 1px solid #000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.content form label {
+    display: block;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 0 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+h1 {
+    text-align: center;
+}

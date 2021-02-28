@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Загрузить фотографию
+{% endblock %}
+
+{% block content %}
+    <div class="message-box"></div>
+    <form action="#" method="post" enctype="multipart/form-data" id="image_upload">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Сохранить</button>
+    </form>
+{% endblock %}
